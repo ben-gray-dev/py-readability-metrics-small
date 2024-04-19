@@ -6,14 +6,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='py-readability-metrics',
+    name='py-readability-metrics-small',
     version='1.4.4',
-    author='Carmine DiMAscio',
-    author_email='cdimascio@gmail.com',
+    author='Ben Gray',
+    author_email='bgray27613@gmail.com',
     description='Score text "Readability" with popular formulas and metrics including Flesch-Kincaid, Gunning Fog, ARI, Dale Chall, SMOG, Spache and more',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/cdimascio/py-readability-metrics',
+    url='https://github.com/ben-gray-dev/py-readability-metrics-small',
     keywords="readability metrics text difficulty grade level",
     packages=find_packages(exclude=['tests']),
     package_data={'readability': ['data', 'data/dale_chall_porterstem.txt', 'data/spache_easy_porterstem.txt']},

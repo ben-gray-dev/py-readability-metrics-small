@@ -4,14 +4,14 @@ from .scorers import ARI, ColemanLiau, DaleChall, Flesch, \
 import warnings
 
 class Readability:
-    def __init__(self, text, min_words=100):
+    def __init__(self, text, min_words=0):
         self._analyzer = Analyzer()
         self._statistics = self._analyzer.analyze(text)
         self._min_words = min_words
-        if self._min_words < 100:
-            warnings.warn(
-                "Documents with fewer than 100 words may affect the accuracy of readability tests"
-            )
+        # if self._min_words < 100:
+        #     warnings.warn(
+        #         "Documents with fewer than 100 words may affect the accuracy of readability tests"
+        #     )
 
     def ari(self):
         """Calculate Automated Readability Index (ARI)."""
